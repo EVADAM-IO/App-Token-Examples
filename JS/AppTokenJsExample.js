@@ -6,7 +6,7 @@ const FormData = require('form-data');
 // These parameters should be used for all requests
 const EVADAM_APP_TOKEN = 'YOUR_EVADAM_APP_TOKEN'; // Example: uY0CgwELmgUAEyl4hNWxLngb.0WSeQeiYny4WEqmAALEAiK2qTC96fBad - Please don't forget to change when switching to production
 const EVADAM_SECRET_KEY = 'YOUR_EVADAM_SECRET_KEY'; // Example: Hej2ch71kG2kTd1iIUDZFNsO5C1lh5Gq - Please don't forget to change when switching to production
-const EVADAM_BASE_URL = 'https://api.evadam.com'; 
+const EVADAM_BASE_URL = 'https://api.evadam.io'; 
 
 var config = {};
 config.baseURL= EVADAM_BASE_URL;
