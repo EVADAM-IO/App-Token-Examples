@@ -15,7 +15,6 @@ axios.interceptors.request.use(createSignature, function (error) {
   return Promise.reject(error);
 })
 
-// This function creates signature for the request as described here: https://developers.EVADAM.com/api-reference/#app-tokens
 
 function createSignature(config) {
   console.log('Creating a signature for the request...');
@@ -36,9 +35,7 @@ function createSignature(config) {
   return config;
 }
 
-// These functions configure requests for specified method
 
-// https://developers.EVADAM.com/api-reference/#creating-an-applicant
 function createApplicant(externalUserId) {
   console.log("Creating an applicant...");
 
@@ -65,7 +62,6 @@ function createApplicant(externalUserId) {
 }
 
 
-// https://developers.EVADAM.com/api-reference/#getting-applicant-status-sdk
 function getApplicantStatus(applicantId) {
   console.log("Getting the applicant status...");
 
