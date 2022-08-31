@@ -54,7 +54,7 @@ class AppTokenGuzzlePhpExample
         return $response;
     }
 
-    private function createSignature($ts, $httpMethod, $url, $httpBody)
+    private function createSignature($ts, $httpMethod, $url)
     {
         return hash_hmac('sha256', $ts . strtoupper($httpMethod) . $url , EVADAM_SECRET_KEY);
     }
