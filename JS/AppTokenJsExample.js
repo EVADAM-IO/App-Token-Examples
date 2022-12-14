@@ -40,7 +40,7 @@ function createApplicant(externalUserId) {
   console.log("Creating an applicant...");
 
   var method = 'post';
-  var url = '/api/session/createSession';
+  var url = '/createSession';
   var ts = Math.floor(Date.now() / 1000);
   
   var body = {
@@ -66,7 +66,7 @@ function getApplicantStatus(applicantId) {
   console.log("Getting the applicant status...");
 
   var method = 'get';
-  var url = `/api/applicants/${applicantId}/`;
+  var url = `/${applicantId}`;
 
   var headers = {
     'Accept': 'application/json',
